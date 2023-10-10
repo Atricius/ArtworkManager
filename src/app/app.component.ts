@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ArtworkManger';
+  title = 'GameInfoBrowser';
+}
+export class AppComponent {
+  LoadedFeature = 'game-detail';
+
+  onNavigate(feature: string) {
+    this.LoadedFeature = feature;
+  }
 }
